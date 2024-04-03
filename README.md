@@ -12,11 +12,11 @@ Setting up Laravel in the local environment with Docker using the LEMP stack tha
 4. ``` You can get a free cloud RabbitMQ instance by signing up at: https://www.cloudamqp.com/ ```
 
 5. ``` In your app’s .env file, set parameters using the Rabbbitmq host and AMQP details like this: ```
-    RABBITMQ_HOST=seal-01.lmq.cloudamqp.com
-    RABBITMQ_PORT=5672
-    RABBITMQ_USER=pilojgeg
-    RABBITMQ_PASSWORD=dDx1k4TSrmYfbXEPADtGgbMbE14mx8iq
-    RABBITMQ_VHOST=pilojgeg
+    - [x] RABBITMQ_HOST=seal-01.lmq.cloudamqp.com
+    - [x] RABBITMQ_PORT=5672
+    - [x] RABBITMQ_USER=pilojgeg
+    - [x] RABBITMQ_PASSWORD=dDx1k4TSrmYfbXEPADtGgbMbE14mx8iq
+    - [x] RABBITMQ_VHOST=pilojgeg
 
 6. ```run: docker-compose build```
 7. ```run: docker compose up -d```
@@ -24,9 +24,9 @@ Setting up Laravel in the local environment with Docker using the LEMP stack tha
 
 9. ```run: docker-compose exec product_app php artisan queue:work```
 10. ``` To create a new product, you would send a POST request to the /products endpoint with the following keys ```
-    title
-    price
-    inventory
+    - [x] title
+    - [x] price
+    - [x] inventory
 
     To retrieve a specific product, you would send a GET request to the /products/{id} endpoint, where {id} is the ID of the product.
 
